@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>各縣市氣象預測</title>
+</head>
+
+<body>
+    <h1>各縣市氣象預測</h1>
+    <label for="citySelect">請選擇城市名稱：</label>
+    <select id="citySelect"></select>
+    <button onclick="showInfo()">取得資訊</button>
+
+    <section>
+        <h2>今明三十六小時天氣狀況</h2>
+        <div id="weather-info" class="info"></div>
+    </section>
+
+    <section>
+        <h2>今日日出日落時間</h2>
+        <div id="sun-info" class="info"></div>
+    </section>
+
+    <section">
+        <h2>空氣質量指數（AQI）</h2>
+        <div id="aqi-Info" class="info"></div>
+    </section>
+
+    <section>
+        <h2>警報和通知</h2>
+        <div id="alerts-info" class="info"></div>
+    </section>
+
+    <section>
+        <h2>特殊活動建議</h2>
+        <div id="activitySuggestionsInfo" class="info"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 天氣預報網站</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+
+</html>
