@@ -93,7 +93,7 @@ async function getSunset(cityName) {
     const data = await fetchData(generateSunsetUrl(cityName));
     const time = data.records.locations.location[0].time[0];
 
-    suninfo.innerHTML = `<p>今日日出時間：${time.SunRiseTime}<br>今日日落時間：${time.SunSetTime}</p>`;
+    suninfo.innerHTML = `<p>日出時間：${time.SunRiseTime}<br>日落時間：${time.SunSetTime}</p>`;
 }
 
 async function getAQI(cityName) {
